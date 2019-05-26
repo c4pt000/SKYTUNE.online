@@ -1,3 +1,0 @@
-#!/bin/sh
-thin start -p 3001  --ssl --ssl-key-file domain.key  --ssl-cert-file domain.crt -e development
-

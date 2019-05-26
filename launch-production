@@ -1,2 +1,0 @@
-#!/bin/sh
-thin start -p 3000 --ssl --ssl-key-file privkey1.pem --ssl-cert-file fullchain1.pem -e development
