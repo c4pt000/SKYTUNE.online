@@ -1,0 +1,3 @@
+rails s -b 'ssl://0.0.0.0:3001?key=private.key&cert=domain.crt' -e production &
+
+./ngrok http 0.0.0.0:3001
