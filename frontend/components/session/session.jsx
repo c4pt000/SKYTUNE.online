@@ -68,7 +68,7 @@ class sessionForm extends React.Component {
   render(){
     let { path, submitForm, errors } = this.props;
     let message = path === 'home/signup' ?
-      <h1>Create your <span className="titlespacing">VIBESKY</span> account</h1> : <h1>Log in</h1>;
+      <h1>Create your <span className="titlespacing">SKYTUNE.online</span> account</h1> : <h1>Log in</h1>;
 
     let styledErrors = errors.map(err => <li>{err}</li>);
     let inputStyle = styledErrors[0] !== undefined ?
@@ -106,7 +106,7 @@ class sessionForm extends React.Component {
           <input className="session-submit" type="submit" value='Continue' />
           <br/><br/>
           <p className="session-text">We may use your email for updates
-            and tips on VIBESKY's products and services. You can unsubscribe
+            and tips on SKYTUNE.online's products and services. You can unsubscribe
             for free at any time in your notification preferences.</p>
           <p className="session-text stcenter">By signing in, you agree to our
             <a target="_blank" href="www.google.com"> Terms of Use</a>

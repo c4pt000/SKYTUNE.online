@@ -11,7 +11,7 @@ class Splash extends React.Component {
       <div className="splash-left">
         <a href="/" className="splash-logo">
           <div className="splash-cloud"></div>
-          <div className="splash-text">VIBESKY</div>
+          <div className="splash-text">SKYTUNE.online</div>
         </a>
       </div>
     );
@@ -42,10 +42,10 @@ class Splash extends React.Component {
           </div>
         </div>
         <div id='splashbottom'>
-        <h1 className='splash-title' >Discover more with VIBESKY</h1> 
-        <h2 className='splash-subtitle' >VIBESKY lets you listen offline,
+        <h1 className='splash-title' >Discover more with SKYTUNE.online</h1> 
+        <h2 className='splash-subtitle' >SKYTUNE.online lets you listen offline,
          ad-free, with over 150 million tracks  -  in the future.</h2> 
-         <h3 className='bl-header' >Hear what's trending for free in the VIBESKY community</h3> 
+         <h3 className='bl-header' >Hear what's trending for free in the SKYTUNE.online community</h3> 
         <ul className='badgeListUl'>
          <a className='badge-a-tags' href="/#/home/signup">
          <li className='badge'>

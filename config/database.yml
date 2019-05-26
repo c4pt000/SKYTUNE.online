@@ -1,5 +1,4 @@
 # PostgreSQL. Versions 9.1 and up are supported.
-#
 # Install the pg driver:
 #   gem install pg
 # On OS X with Homebrew:
@@ -10,10 +9,8 @@
 #   gem install pg
 #       Choose the win32 build.
 #       Install PostgreSQL and put its /bin directory on your path.
-#
 # Configure Using Gemfile
 # gem 'pg'
-#
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -25,23 +22,22 @@ development:
   <<: *default
   database: vibesky_development
 
-  # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: vibesky
+  #KEEP DATABASE username AT NEXT LINE 29 SCRIPTS CAN BREAK
+ username: skytune
 
-  # The password associated with the postgres role (username).
-  #password:
-
+# The password the postgres role (username). KEEP DATABASE PASSWORD AT NEXT LINE 32 SCRIPTS CAN BREAK
+  password: whatpass
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
+  host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  #port: 5432
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -77,9 +73,9 @@ test:
 #
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
-#
+#KEEP DATABASE username AT NEXT LINE 80 SCRIPTS CAN BREAK
 production:
   <<: *default
-  database: vibesky_production
-  username: vibesky
-  password: <%= ENV['VIBESKY_DATABASE_PASSWORD'] %>
+  database: vibesky_development
+ username: skytune
+  password: <%= ENV['SKYTUNE.online_DATABASE_PASSWORD'] %>

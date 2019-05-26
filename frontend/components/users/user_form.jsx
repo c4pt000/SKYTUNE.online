@@ -92,7 +92,7 @@ class UserForm extends React.Component {
       <div className='track-form-container'>
         <form onSubmit={this.handleSubmit} className='track-form'>
           {/* <div classNgame={upload_container}>
-            <h1>Upload to VIBESKY</h1>
+            <h1>Upload to SKYTUNE.online</h1>
             <label className='inputLabel il-main active-ring'>Choose a file to upload
               <input className="h-input" type="file" onChange={(e) => this.updateFile('audio', e)}/>
             </label>
