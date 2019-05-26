@@ -3,6 +3,19 @@
 ## * WIP,
 ## docker image soon
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+postgresql installer and site configuration for database username and password
+https://github.com/c4pt000/SKYTUNE.online/blob/master/README.md.setupandcreate-postgresand-database.sh
+
+
+
+<br>
 # vibesky
 
 #### https://vibesky.herokuapp.com
