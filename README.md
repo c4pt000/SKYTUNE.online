@@ -1,4 +1,8 @@
 
+
+## * WIP,
+## docker image soon
+
 # vibesky
 
 #### https://vibesky.herokuapp.com
