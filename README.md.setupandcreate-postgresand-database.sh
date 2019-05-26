@@ -25,7 +25,7 @@ echo ""
 echo ""
 echo ""
 echo "installing postgresql-server"
-apt install postgresql -y
+apt install postgresql thin -y
 echo ""
 echo ""
 echo ""
