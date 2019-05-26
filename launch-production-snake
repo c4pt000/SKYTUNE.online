@@ -1,2 +1,3 @@
 #!/bin/sh
+#what python
 thin start -a 0.0.0.0 -p 443  --ssl --ssl-key-file privkey1.pem  --ssl-cert-file fullchain1.pem -e production 
