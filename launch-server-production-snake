@@ -1,6 +1,5 @@
 #!/bin/sh
 #what python
-#copy or move this to /opt/SKYTUNE/
 #add to cron with crontab -e
 #
 #
