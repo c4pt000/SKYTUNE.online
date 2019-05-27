@@ -52,3 +52,7 @@ config.paperclip_defaults = {
   }
 <br>
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> push change

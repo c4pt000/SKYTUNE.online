@@ -68,6 +68,7 @@ Rails.application.configure do
 
 #production.rb
 #production.rb
+<<<<<<< HEAD
 config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
@@ -79,7 +80,19 @@ config.paperclip_defaults = {
   }
 }
 
+=======
+>>>>>>> push change
 
+config.paperclip_defaults = {
+	:storage => :s3,
+	:s3_credentials => {
+	:bucket => 'vibesky-test-YOUR-BUCKET-NAME',
+	:access_key_id => 'AKIAJGXXXXXXXVCRDUJQ',
+	:secret_access_key => 'dgmbhLYJwXXXXXXXDbGrbwkEYAvy6ZuHu8ghgD2i',
+	:s3_region => 'ap-northeast-1', //YOUR REGION HERE for s3
+	:s3_host_name => 's3-ap-northeast-1.amazonaws.com' //YOUR REGION HERE for s3
+	}
+} 
 
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
