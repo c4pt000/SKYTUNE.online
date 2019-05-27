@@ -72,9 +72,9 @@ config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
   :bucket => 'vibesky-test',
-    :access_key_id => 'AKIAJGU3P3LTAVCRDUJQ',
-    :secret_access_key => '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',
-  :s3_region => 'ap-northeast-1',
+    :access_key_id => '',
+    :secret_access_key => '',
+  :s3_region => '',
 :s3_host_name => 's3-ap-northeast-1.amazonaws.com'
   }
 }
