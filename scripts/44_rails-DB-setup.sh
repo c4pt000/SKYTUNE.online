@@ -32,7 +32,13 @@ echo "THIS SCRIPT WILL BREAK WITHOUT PROPER S3 setup beforehand"
 
 echo "crtl-c to quit"
 sleep 20
+
+		# extreme wrench -> gem uninstall -Iax remove all install gems,
 cd ../
+gem install bundler -v 1.17.3
+bundle update
+bundle install
+
 cd db
 rails secrets:setup
 rails secret > secret.txt
@@ -54,16 +60,13 @@ sed -i "30s/.*/  production: /g" ../config/secrets.yml
 sed -i "31s/.*/  secret_key_base: $varname/g" ../config/secrets.yml
 done < "$file"
 
-
-rails db:create
+cd ../db
 rails db:setup
-rails db:migrate
-rails db:seed
+rails db:migrate:redo
+rails db:migrate:status
 
 
 
 cat ../config/secrets.yml
-sleep 3
 sed '30q;d' ../config/secrets.yml
 sed '31q;d' ../config/secrets.yml
-sleep 3
