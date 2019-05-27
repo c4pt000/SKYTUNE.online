@@ -37,6 +37,11 @@ update-rc.d -f apache2 enable
 service start apache2
 echo ""
 echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
 echo "listing users for postgres"
 sudo -u postgres bash -c  "psql -c '\du'"
 sleep 2
@@ -66,7 +71,7 @@ echo ""
 echo "enter password twice exactly as previously entered"
 echo ""
 
-createuser -sPE "$username" 
+sudo -u postgres bash -c  "createuser -sPE" $username 
 
 sleep 2
 echo "listing users for postgres"
