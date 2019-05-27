@@ -26,7 +26,7 @@ echo ""
 echo ""
 echo "installing postgresql-server"
 apt update
-apt install postgresql-10 thin apache2 -y
+apt install postgresql-10 thin apache2 sudo systemd -y
 echo ""
 echo ""
 echo ""
