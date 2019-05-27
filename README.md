@@ -11,7 +11,7 @@
 
 <br>
 <br>
-node 9.8.0 + ruby 2.5.5 best compat
+node 9.8.0 + ruby 2.5.1 best compat  (2.5.5 ot? best compat)
 <br>
 <br>
 <br>
