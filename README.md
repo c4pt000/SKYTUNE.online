@@ -18,8 +18,6 @@ node 9.8.0 + ruby 2.5.1 best compat  (2.5.5 ot? best compat)
 <br>
 
 
-postgresql installer and site configuration for database username and password
-https://github.com/c4pt000/SKYTUNE.online/blob/master/README.md.setupandcreate-postgresand-database.sh
 
 
 
