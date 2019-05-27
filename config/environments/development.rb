@@ -71,6 +71,7 @@ config.web_console.whitelisted_ips = %w( 0.0.0.0/0 ::/0 )
 #production.rb
 config.paperclip_defaults = {
 <<<<<<< HEAD
+<<<<<<< HEAD
   :storage => :s3,
   :s3_credentials => {
   :bucket => 'vibesky-test',
@@ -81,6 +82,8 @@ config.paperclip_defaults = {
   }
 }
 =======
+=======
+>>>>>>> a351f52350fc62513bdcf69ac22bcedf6878290e
         :storage => :s3,
         :s3_credentials => {
         :bucket => 'vibesky-test-YOUR-BUCKET-NAME',
@@ -91,7 +94,10 @@ config.paperclip_defaults = {
         }
 } 
 
+<<<<<<< HEAD
 >>>>>>> push change
+=======
+>>>>>>> a351f52350fc62513bdcf69ac22bcedf6878290e
 
 
 

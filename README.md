@@ -53,6 +53,10 @@ config.paperclip_defaults = {
 <br>
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> push change
+=======
+
+>>>>>>> a351f52350fc62513bdcf69ac22bcedf6878290e

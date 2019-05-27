@@ -69,6 +69,7 @@ Rails.application.configure do
 #production.rb
 #production.rb
 <<<<<<< HEAD
+<<<<<<< HEAD
 config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
@@ -82,6 +83,8 @@ config.paperclip_defaults = {
 
 =======
 >>>>>>> push change
+=======
+>>>>>>> a351f52350fc62513bdcf69ac22bcedf6878290e
 
 config.paperclip_defaults = {
 	:storage => :s3,
