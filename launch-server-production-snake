@@ -1,0 +1,20 @@
+#!/bin/sh
+#what python
+#copy or move this to /opt/SKYTUNE/
+#add to cron with crontab -e
+#
+#
+#   @reboot cd /opt/SKYTUNE && RAILS_ENV=production rake assets:clobber && thin start -a 0.0.0.0 -p 443  --ssl --ssl-key-file privkey1.pem  --ssl-cert-file fullchain1.pem -e production 
+#   * * * * *cd /opt/SKYTUNE && RAILS_ENV=production rake assets:clobber && thin start -a 0.0.0.0 -p 443  --ssl --ssl-key-file privkey1.pem  --ssl-cert-file fullchain1.pem -e production 
+
+apt install cron -y
+systemctl enable cron
+systemctl start cron
+#
+#   @reboot cd /opt/SKYTUNE && RAILS_ENV=production rake assets:clobber && thin start -a 0.0.0.0 -p 443  --ssl --ssl-key-file privkey1.pem  --ssl-cert-file fullchain1.pem -e production 
+#   * * * * * cd /opt/SKYTUNE && RAILS_ENV=production rake assets:clobber && thin start -a 0.0.0.0 -p 443  --ssl --ssl-key-file privkey1.pem  --ssl-cert-file fullchain1.pem -e production 
+#
+#
+#
+#
+thin start -a 0.0.0.0 -p 443  --ssl --ssl-key-file privkey1.pem  --ssl-cert-file fullchain1.pem -e production 
