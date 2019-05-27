@@ -78,8 +78,8 @@
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-	production:
-	  <<: *default
-	  database: vibesky_development
-	  username: skytune
-	  password: <%= ENV['SKYTUNE.online_DATABASE_PASSWORD'] %>
+  production:
+  <<: *default
+  database: vibesky_development
+  username: skytune
+  password: <%= ENV['SKYTUNE.online_DATABASE_PASSWORD'] %>
