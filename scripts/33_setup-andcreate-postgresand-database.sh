@@ -26,6 +26,7 @@ echo ""
 echo ""
 echo "installing postgresql-server"
 apt update
+apt install libssl-dev ruby-dev libcurl3-openssl-dev aptitude build-essential libpq-dev zlib1g-dev zlibc libreadline-dev -y
 apt install  postgresql postgresql-contrib thin apache2 sudo systemd -y
 echo ""
 echo ""
