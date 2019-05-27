@@ -2,7 +2,7 @@ insert data (replace) for aws s3 bucket, or site will break,
 <br>
 keep SSL = true
 <br>
-site requires regular SSL certs, not really self signed SSL certs,
+site requires regular SSL certs, not really self signed SSL certs,  (namecheap.com? domain + letencrypt cert for standard SSL)
 <br>
 (production.rb)
 <br>
