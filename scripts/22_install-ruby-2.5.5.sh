@@ -16,6 +16,7 @@ echo ""
 echo "script will pause for 10 seconds"
 sleep 10
 echo ""
+apt install libssl-dev ruby-dev -y
 echo ""
 tar -xf ruby-2.5.5.tar.xz
 cd ruby-2.5.5
