@@ -68,23 +68,6 @@ Rails.application.configure do
 
 #production.rb
 #production.rb
-<<<<<<< HEAD
-<<<<<<< HEAD
-config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-  :bucket => 'vibesky-test',
-    :access_key_id => '',
-    :secret_access_key => '',
-  :s3_region => '',
-:s3_host_name => 's3-ap-northeast-1.amazonaws.com'
-  }
-}
-
-=======
->>>>>>> push change
-=======
->>>>>>> a351f52350fc62513bdcf69ac22bcedf6878290e
 
 config.paperclip_defaults = {
 	:storage => :s3,
