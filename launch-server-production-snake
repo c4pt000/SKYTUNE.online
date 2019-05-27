@@ -17,5 +17,5 @@ systemctl start cron
 #
 #
 #
-thin start -a 0.0.0.0 -p 443  --ssl --ssl-key-file key.pem  --ssl-cert-file cert.pem -e production 
 
+thin start -a 0.0.0.0 -p 443  --ssl --ssl-key-file server.key --ssl-cert-file server.cert -e production 
