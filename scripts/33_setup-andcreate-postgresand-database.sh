@@ -29,11 +29,12 @@ apt update
 apt install  postgresql postgresql-contrib thin apache2 sudo systemd -y
 echo ""
 echo ""
-systemctl enable postgresql
-systemctl start postgresql
+update-rc.d -f postgresql enable
+service postgresql restart
 echo ""
-systemctl enable apache2
-systemctl start apache2
+echo ""
+update-rc.d -f apache2 enable
+service start apache2
 echo ""
 echo ""
 echo "listing users for postgres"
