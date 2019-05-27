@@ -29,12 +29,15 @@ apt update
 apt install  postgresql postgresql-contrib thin apache2 sudo systemd -y
 echo ""
 echo ""
+echo "okl here"
 update-rc.d -f postgresql enable
+service postgresql start
 service postgresql restart
 echo ""
 echo ""
 update-rc.d -f apache2 enable
-service start apache2
+service apache2 start
+service apache2 restart
 echo ""
 echo ""
 echo ""
@@ -70,8 +73,10 @@ echo ""
 echo ""
 echo "enter password twice exactly as previously entered"
 echo ""
-
-sudo -u postgres bash -c  "createuser -sPE" $username 
+echo "create root user for postgresql"
+sudo -u postgres bash -c  "createuser -sPE root "
+echo "create site's username for postgresql"
+sudo -u postgres bash -c  "createuser -sPE '$username' "
 
 sleep 2
 echo "listing users for postgres"
