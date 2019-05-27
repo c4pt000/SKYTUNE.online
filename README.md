@@ -36,6 +36,8 @@ vibesky, a SoundCloud clone, is a music social media app where users can discove
 
 
 
+https://github.com/c4pt000/SKYTUNE.online/tree/master/config/environments
+
 
 
 ## ** S3 amazon storage e.x. config from "config/environments/production.rb"
