@@ -1,4 +1,4 @@
-insert data for s3, or site will break,
+insert data (replace) for aws s3 bucket, or site will break,
 
 keep SSL = true
 
