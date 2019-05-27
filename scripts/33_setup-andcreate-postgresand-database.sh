@@ -26,15 +26,14 @@ echo ""
 echo ""
 echo "installing postgresql-server"
 apt update
-apt install postgresql-10 thin apache2 sudo systemd -y
+apt install  postgresql postgresql-contrib thin apache2 sudo systemd -y
 echo ""
 echo ""
+systemctl enable postgresql
+systemctl start postgresql
 echo ""
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
+systemctl enable apache2
+systemctl start apache2
 echo ""
 echo ""
 echo "listing users for postgres"
