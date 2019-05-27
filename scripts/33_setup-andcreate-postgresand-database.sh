@@ -134,7 +134,7 @@ echo ""
 echo ""
 echo ""
 sleep 2
-echo "if this line reads output crtl-c "
+echo "if this line reads any output crtl-c to fix if it conflicts  "
 sed '87q;d' /etc/postgresql/10/main/pg_hba.conf
 echo ""
 echo ""
