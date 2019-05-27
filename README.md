@@ -1,7 +1,13 @@
 
 
 ## * WIP,
-## docker image soon
+
+
+# todo:
+
+* docker image soon
+* mass uploader @profile
+
 
 <br>
 <br>
