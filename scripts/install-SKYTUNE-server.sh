@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#run main-bootstrap-installer outside of this scripts directory
 
 echo " run node install 11_install-node-9.8.0"
 echo " run postgreSQL install 22_setup-andcreate-postgresand-database"
