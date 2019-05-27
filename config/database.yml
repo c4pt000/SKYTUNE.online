@@ -14,16 +14,16 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
-  default: &default
+default: &default
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-  development:
+development:
   <<: *default
-  database: vibesky_development
+  database: SKYTUNE
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -32,7 +32,7 @@
   username: skytune
 
   # The password associated with the postgres role (username).
-  password: whatpass
+  password: 'whatpass'
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -55,9 +55,9 @@
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-  test:
+test:
   <<: *default
-  database: vibesky_test
+  database: skytune_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -78,8 +78,8 @@
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-  production:
+production:
   <<: *default
-  database: vibesky_development
+  database: SKYTUNE
   username: skytune
   password: <%= ENV['SKYTUNE.online_DATABASE_PASSWORD'] %>

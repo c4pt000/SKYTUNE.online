@@ -1,0 +1,136 @@
+#!/bin/sh
+
+
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "installing postgresql-server"
+apt update
+apt install postgresql-10 thin -y
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "listing users for postgres"
+sudo -u postgres bash -c  "psql -c '\du'"
+sleep 2
+echo "if user exists to reseed user cancel script, drop user with 'dropuser username' and rerun this script! "
+echo ""
+echo ""
+echo "script will pause for 5 seconds"
+echo "CRTL-c if user already exists! "
+sleep 5
+echo ""
+echo ""
+echo ""
+echo ""
+echo "create initial user and password"
+echo ""
+echo ""
+echo "select username for skytune setup"
+read -p "enter username   " username
+echo "select password for skytune setup"
+read -p "enter password   " password
+sleep 2
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "enter password twice exactly as previously entered"
+echo ""
+
+createuser -sPE "$username" 
+
+sleep 2
+echo "listing users for postgres"
+sudo -u postgres bash -c  "psql -c '\du'"
+sleep 2
+echo ""
+echo ""
+echo ""
+
+echo "pausing for 5 seconds"
+sleep 5
+
+
+
+echo "setting username in database.yml for database config"
+sed -i "27s/.*/  username: $username/g" ../config/database.yml
+sed -i "84s/.*/  username: $username/g" ../config/database.yml
+
+echo "settings for ../config/database.yml"
+echo ""
+sed '27q;d' ../config/database.yml
+sed '28q;d' ../config/database.yml
+sed '81q;d' ../config/database.yml
+sed '82q;d' ../config/database.yml
+sed '83q;d' ../config/database.yml
+sed '84q;d' ../config/database.yml
+sed '85q;d' ../config/database.yml
+echo ""
+echo "setting password in database.yml for database config"
+echo ""
+echo ""
+sed -i "28s/.*/  password: $password/g" ../config/database.yml
+echo ""
+echo "password in database.yml set as"
+echo ""
+sed '28q;d' ../config/database.yml
+echo ""
+echo ""
+echo ""
+echo "if user creation failed: run the dropuser command 'dropuser username_here' and rerun this script "
+echo ""
+echo ""
+
+echo "hardcoding values for pg_hba.conf danger here with this one..."
+echo "if postgre breaks check values for /etc/postgresql/10/main/pg_hba.conf"
+echo " cp pg_hba.conf to backup pg_hba.conf.orig"
+echo ""
+echo ""
+echo ""
+echo "cp -rf /etc/postgresql/10/main/pg_hba.conf /etc/postgresql/10/main/pg_hba.conf.orig"
+cp -rf /etc/postgresql/10/main/pg_hba.conf /etc/postgresql/10/main/pg_hba.conf.orig
+
+echo "setting changes..."
+echo ""
+echo ""
+echo ""
+sleep 2
+echo "if this line reads output crtl-c "
+sed '87q;d' /etc/postgresql/10/main/pg_hba.conf
+echo ""
+echo ""
+echo ""
+sleep 3
+sed -i "87s/.*/local   all             $username                               peer/g" /etc/postgresql/10/main/pg_hba.conf
+sed '87q;d' /etc/postgresql/10/main/pg_hba.conf
+
+

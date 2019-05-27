@@ -11,6 +11,13 @@ ActiveRecord::Base.transaction do
   Comment.destroy_all
 
   User.create!([
+    {email: 'Diplo', password: 'password'},
+    {email: 'Lorde', password: 'password'},
+    {email: 'Muse', password: 'password'},
+    {email: 'The Beatles', password: 'password'},
+    {email: 'MGMT', password: 'password'},
+    {email: 'Fleetwood Mac', password: 'password'},
+    {email: 'Hall and Oates', password: 'password'},
     {email: 'demouser', password: 'password'}
   ])
 
@@ -19,12 +26,32 @@ ActiveRecord::Base.transaction do
   # "SampleSynth.mp3"
 
   uploadernames = [
-    "demouser",
+    "Diplo",
+    "Lorde",
+    "Muse",
+    "The Beatles",
+    "MGMT",
+    "Fleetwood Mac",
+    "Hall and Oates",
   ]
   track_names = [
+    "Get It Right (Feat. Mø & Goldlink) Remix.mp3",
+    "Magnets.mp3",
+    "MK Ultra.mp3",
+    "Here Comes The Sun.mp3",
+    "Me and Michael.mp3",
+    "Never Going Back Again.mp3",
+    "Rich Girl.mp3"
   ]
 
   track_pics = [
+    "Diplo.jpg",
+    "lorde-magnets.jpg",
+    "muse.jpg",
+    "beatles.jpg",
+    "MGMT.jpg",
+    "fleetwood.jpg",
+    "richgirl.jpg"
   ]
 
   uploaderids = uploadernames.map do |name| 
@@ -75,8 +102,8 @@ ActiveRecord::Base.transaction do
     "How did you make such incredible work?!",
     "This is tooo gooooodd",
     "Instant Classic",
-    "Overly thought out! Leading the way!"
-    "the original source is readily available from github https://github.com/Mpompili/vibesky"
+    "Overly thought out! Leading the way!",
+    "original source located at http://github.com/Mpompili/vibesky"
   ]
 #   track_names.each do |track|
 #     Track.create!({
