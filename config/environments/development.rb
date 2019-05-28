@@ -45,8 +45,9 @@ config.web_console.whitelisted_ips = %w( 0.0.0.0/0 ::/0 )
   # config.action_cable.url = 'wss://example.com/cable'
 #   config.action_cable.allowed_request_origins = [ 'http://hi21.one', /http:\/\/hit21.*/ ]
 
+  config.force_ssl = false
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-   config.force_ssl = true
+  # config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -69,16 +70,17 @@ config.web_console.whitelisted_ips = %w( 0.0.0.0/0 ::/0 )
 #adjust accordingly
 #development.rb
 #production.rb
-config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-  :bucket => 'vibesky-test',
-    :access_key_id => 'AKIAJGU3P00000000000',
-    :secret_access_key => 'dgmbhLYJwzVjy1xpD00000kEYAvy6ZuHu8g00000',
-  :s3_region => 'ap-northeast-1',
-:s3_host_name => 's3-ap-northeast-1.amazonaws.com'
-  }
-}
+  
+#config.paperclip_defaults = {
+#  :storage => :s3,
+#  :s3_credentials => {
+#  :bucket => 'vibesky-test',
+#    :access_key_id => 'AKIAJGU3P00000000000',
+#    :secret_access_key => 'dgmbhLYJwzVjy1xpD00000kEYAvy6ZuHu8g00000',
+#  :s3_region => 'ap-northeast-1',
+#:s3_host_name => 's3-ap-northeast-1.amazonaws.com'
+#  }
+#}
 
 
 
