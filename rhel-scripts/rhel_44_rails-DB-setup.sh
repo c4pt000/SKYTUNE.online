@@ -56,7 +56,7 @@ sed '30q;d' ../config/secrets.yml
 sed '31q;d' ../config/secrets.yml
 
 
-sed -i "30s/.*/  production: /g" ../config/secrets.yml
+sed -i "30s/.*/production: /g" ../config/secrets.yml
 sed -i "31s/.*/  secret_key_base: $varname/g" ../config/secrets.yml
 done < "$file"
 
