@@ -19,15 +19,18 @@ node 9.8.0 + ruby 2.5.1 best compat  (2.5.5 ot? best compat)
 
 
 # S3 module is optional for use as a remote data store
-
-
+<br>
 * site will operate in NON SSL or SSL either way HTTP or HTTPS
+<br>
 
-
-bootstrap_MAIN_install.sh
+bootstrap_MAIN_install.sh              for Ubuntu 18.04 install mainly (Debian/otherAPTs)
+<br>
+rhel_bootstrap_MAIN_install.sh          for Fedora 28 installs mainly (RHEL/CentOS other)
+<br>
 
 default operation standard HTTP
-see -> https://github.com/c4pt000/SKYTUNE.online/edit/master/config/environments/README.md
+<br>
+check -> https://github.com/c4pt000/SKYTUNE.online/edit/master/config/environments/README.md
 
 
 <br>
