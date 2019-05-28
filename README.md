@@ -36,28 +36,8 @@ vibesky, a SoundCloud clone, is a music social media app where users can discove
 
 
 
-https://github.com/c4pt000/SKYTUNE.online/tree/master/config/environments
 
 
 
-## ** S3 amazon storage e.x. config from "config/environments/production.rb"
-<br>
-config.paperclip_defaults = {
-<br>
-  :storage => :s3,
-<br>
-  :s3_credentials => {
-<br>
-  :bucket => 'vibesky-test-YOUR-BUCKET-NAME',
-<br>
-  :access_key_id => 'AKIAJGXXXXXXXVCRDUJQ',
-<br>
-  :secret_access_key => 'dgmbhLYJwXXXXXXXDbGrbwkEYAvy6ZuHu8ghgD2i',
-<br>
-  :s3_region => 'ap-northeast-1',                                    //YOUR REGION HERE for s3
-<br>
-  :s3_host_name => 's3-ap-northeast-1.amazonaws.com'                   //YOUR REGION HERE for s3
-<br>
-  }
-<br>
-}
+# S3 module is optional for use a remote data store
+
