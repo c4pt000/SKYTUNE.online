@@ -33,7 +33,9 @@ see -> https://github.com/c4pt000/SKYTUNE.online/edit/master/config/environments
 <br>
 
 check ssl-cert-creation.txt
- server.cert -> fullchain1.pem                server.key -> privkey1.pem 
+<br>
+ server.cert -> fullchain1.pem        server.key -> privkey1.pem 
+ <br>
 
 replace with your SSL cert per DNS            for server.key, server.cert,   -> ip specific
 <br>
