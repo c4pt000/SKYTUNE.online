@@ -67,6 +67,7 @@ thin start -a 0.0.0.0 -p 443 --ssl --ssl-key-file server.key --ssl-cert-file ser
 <br>
 <br>
 <br>
+todo document pgadmin3 or pgadmin4 scripted install for postgresql 
 <br>
 <br>
 <br>
