@@ -1,4 +1,3 @@
-insert data (replace) for aws s3 bucket, s3 is optional,
 <br>
 * site will operate standard http (non-https wasn't sure before)
 <br>
