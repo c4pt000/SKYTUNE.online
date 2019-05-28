@@ -7,6 +7,9 @@
 
 * docker image soon
 * mass uploader @profile
+* .flac support (site currently only seems to support .mp3 possibly others)
+* visual tic indicator for "loop once, loop indefinitely" in site audio player
+* possible other plugins similar or identical to soundcloud.com
 
 # Ubuntu 18.04    RHEL/Fedora
 
