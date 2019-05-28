@@ -32,6 +32,9 @@ see -> https://github.com/c4pt000/SKYTUNE.online/edit/master/config/environments
 
 <br>
 
+check ssl-creation.txt
+ server.cert -> fullchain1.pem                server.key -> privkey1.pem 
+
 replace with your SSL cert per DNS            for server.key, server.cert,   -> ip specific
 <br>
 thin start -a 0.0.0.0 -p 443 --ssl --ssl-key-file server.key --ssl-cert-file server.cert -e production 
