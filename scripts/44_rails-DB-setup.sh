@@ -28,7 +28,6 @@ echo "Aws::S3::Errors::InvalidAccessKeyId: The AWS Access Key Id you provided do
 echo ""
 echo ""
 echo ""
-echo "THIS SCRIPT WILL BREAK WITHOUT PROPER S3 setup beforehand"
 
 echo "crtl-c to quit"
 sleep 20
