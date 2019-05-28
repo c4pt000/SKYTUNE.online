@@ -1,0 +1,15 @@
+#!/bin/sh
+#what python
+#add to cron with crontab -e
+#
+#
+#   @reboot cd /opt/SKYTUNE && RAILS_ENV=production rake assets:clobber && thin start -a 0.0.0.0 -p 8080 -e production 
+#   * * * * *cd /opt/SKYTUNE && RAILS_ENV=production rake assets:clobber && thin start -a 0.0.0.0 -p 8080 -e production 
+
+
+#apt install cron -y
+#systemctl enable cron
+#systemctl start cron
+
+
+thin start -a 0.0.0.0 -p 8080 -e production 
