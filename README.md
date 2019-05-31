@@ -50,9 +50,14 @@ check -> https://github.com/c4pt000/SKYTUNE.online/edit/master/config/environmen
 
 # * for docker
 
+yum install git-core nano sudo which
+
+
 docker run -ti --cap-add=SYS_ADMIN -e "container=fedora28" -v /sys/fs/cgroup:/sys/fs/cgroup fedora /usr/sbin/init 
 <br>
 docker exec -it container-name-here /bin/bash
+
+
 
 <br>
 
