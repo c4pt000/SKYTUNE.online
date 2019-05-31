@@ -17,7 +17,7 @@ echo "script will pause for 10 seconds"
 sleep 10
 echo ""
 echo ""
-yum install xz-* ruby-devel gnulib-devel -y
+yum install xz-* ruby-devel gnulib-devel bzip2 -y
 tar ruby-2.4.2.tar.bz2
 cd ruby-2.4.2
 cp -rfv bin/* /usr/bin/
