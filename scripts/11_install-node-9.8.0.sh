@@ -17,6 +17,7 @@ echo "script will pause for 10 seconds"
 sleep 10
 echo ""
 echo ""
+yum install xz-*
 tar -xf node-v9.8.0-linux-x64.tar.xz
 cd node-v9.8.0-linux-x64
 cp -rfv bin/* /usr/bin/
