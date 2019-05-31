@@ -48,6 +48,16 @@ default operation standard HTTP
 <br>
 check -> https://github.com/c4pt000/SKYTUNE.online/edit/master/config/environments/README.md
 
+
+# * update rhel-install script seems semi functional to bring up the frontend on a fresh install
+
+
+sh rhel_bootstrap_MAIN_install.sh 
+
+chmod +x launch-server-production-NON-ssl
+
+./launch-server-production-NON-ssl
+
 # * for docker
 
 yum install git-core nano sudo which
