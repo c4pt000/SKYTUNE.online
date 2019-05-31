@@ -39,8 +39,8 @@ bundle install
 cd db
 rails secrets:setup
 rails secret > secret.txt
-cp -rf secret.txt ../scripts/
-cd ../scripts
+cp -rf secret.txt ../rhel-scripts/
+cd ../rhel-scripts
 
 file=secret.txt
 
