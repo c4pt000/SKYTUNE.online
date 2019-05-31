@@ -22,9 +22,7 @@ echo "https://github.com/c4pt000/SKYTUNE.online/blob/master/config/environments/
 echo "https://github.com/c4pt000/SKYTUNE.online/blob/master/config/environments/development.rb#L68"
 echo ""
 echo ""
-echo "general s3 errors include "
-echo ""
-echo "Aws::S3::Errors::InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records."
+echo "general s3 errors include " --> "Aws::S3::Errors::InvalidAccessKeyId: The AWS Access Key Id you provided does not exist in our records."
 echo ""
 echo ""
 echo ""
@@ -34,7 +32,7 @@ sleep 20
 
 		# extreme wrench -> gem uninstall -Iax remove all install gems,
 cd ../
-yum install redhat-rpm-config-110-1.fc28.noarch -y
+yum install redhat-rpm-config -y
 gem install bundler -v 1.17.3
 bundle update
 bundle install
