@@ -18,6 +18,13 @@ sleep 10
 echo ""
 echo ""
 yum install xz-* ruby-devel gnulib-devel -y
+tar ruby-2.4.2.tar.bz2
+cd ruby-2.4.2
+cp -rfv bin/* /usr/bin/
+cp -rfv include/* /usr/include/
+cp -rfv share/* /usr/share/
+cp -rfv lib/* /usr/lib/
+cd ..
 tar -xf node-v9.8.0-linux-x64.tar.xz
 cd node-v9.8.0-linux-x64
 cp -rfv bin/* /usr/bin/
