@@ -18,11 +18,6 @@ sleep 10
 echo ""
 echo ""
 yum install xz-* ruby-devel gnulib-devel bzip2 openssl -y
-cp -rfv bin/* /usr/bin/
-cp -rfv include/* /usr/include/
-cp -rfv share/* /usr/share/
-cp -rfv lib/* /usr/lib/
-cd ..
 tar -xf node-v9.8.0-linux-x64.tar.xz
 cd node-v9.8.0-linux-x64
 cp -rfv bin/* /usr/bin/
