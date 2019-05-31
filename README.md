@@ -48,6 +48,11 @@ default operation standard HTTP
 <br>
 check -> https://github.com/c4pt000/SKYTUNE.online/edit/master/config/environments/README.md
 
+# * for docker
+
+docker run -ti --cap-add=SYS_ADMIN -e "container=fedora28" -v /sys/fs/cgroup:/sys/fs/cgroup fedora /usr/sbin/init 
+<br>
+docker exec -it container-name-here /bin/bash
 
 <br>
 
