@@ -40,7 +40,7 @@ echo "selinux policies for postgresql with setenforce=1 "
 echo ""
 echo "for systems with selinux policies enabled"
 echo ""
-echo "semanage fcontext -a -t postgresql_db_t "/my/new/location(/.*)?""
+echo '"semanage fcontext -a -t postgresql_db_t "/my/new/location(/.*)?"'
 echo ""
 echo "for systems with selinux policies enabled"
 echo ""
