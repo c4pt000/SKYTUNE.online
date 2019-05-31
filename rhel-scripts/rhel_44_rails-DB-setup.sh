@@ -32,7 +32,6 @@ sleep 20
 
 		# extreme wrench -> gem uninstall -Iax remove all install gems,
 cd ../
-yum install redhat-rpm-config -y
 gem install bundler -v 1.17.3
 bundle update
 bundle install
