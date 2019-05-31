@@ -32,13 +32,28 @@ postgresql-setup upgrade
 systemctl enable postgresql
 systemctl start postgresql
 
-echo "selinux policies for postgresql with setenforce=1 "
-semanage fcontext -a -t postgresql_db_t "/my/new/location(/.*)?"
-echo "If default port doesn't work for you, you may need to map postgre's port type to your desired port:"
-semanage port -a -t postgresql_port_t -p tcp 5433
-echo "If you install a webapp that wants to communicate with PostgreSQL via TCP/IP, you will have to tell SELinux to allow this on the webserver host:"
-setsebool -P httpd_can_network_connect_db on
 
+echo ""
+echo "for systems with selinux policies enabled"
+echo ""
+echo "selinux policies for postgresql with setenforce=1 "
+echo ""
+echo "for systems with selinux policies enabled"
+echo ""
+echo "semanage fcontext -a -t postgresql_db_t "/my/new/location(/.*)?""
+echo ""
+echo "for systems with selinux policies enabled"
+echo ""
+echo "If default port doesn't work for you, you may need to map postgre's port type to your desired port:"
+echo ""
+echo "for systems with selinux policies enabled"
+echo ""
+echo "semanage port -a -t postgresql_port_t -p tcp 5433"
+echo ""
+echo "If you install a webapp that wants to communicate with PostgreSQL via TCP/IP, you will have to tell SELinux to allow this on the webserver host:"
+echo ""
+echo "setsebool -P httpd_can_network_connect_db on"
+sleep 3
 yum groupinstall "Development Tools" -y
 echo ""
 echo ""
