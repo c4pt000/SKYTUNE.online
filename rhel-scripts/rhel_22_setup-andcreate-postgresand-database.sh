@@ -163,6 +163,6 @@ echo ""
 echo "overwrite pg_hba.conf /var/lib/pgsql/data/pg_hba"
 cp -rf pg_hba.conf /var/lib/pgsql/data/pg_hba.conf
 
-service postgresql restart
+systemctl restart postgresql
 
 sleep 10
