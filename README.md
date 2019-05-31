@@ -31,7 +31,7 @@ node 9.8.0 + ruby 2.5.1 best compat  (2.5.5 ot? best compat)
 <br>
 
 
-# * for docker systemd    ->              docker run -it --privileged --name=rk7 (fedora/ubuntu)
+# * for docker systemd    ->              docker run -it --privileged (fedora/ubuntu)
                                                                        
 
 # S3 module is optional for use as a remote data store
