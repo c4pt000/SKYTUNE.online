@@ -137,13 +137,13 @@ sleep 5
 
 
 echo "setting username in database.yml for database config"
-sed -i "27s/.*/  username: $username/g" ../config/database.yml
+sed -i "32s/.*/  username: $username/g" ../config/database.yml
 sed -i "84s/.*/  username: $username/g" ../config/database.yml
 
 echo "settings for ../config/database.yml"
 echo ""
-sed '27q;d' ../config/database.yml
-sed '28q;d' ../config/database.yml
+sed '32q;d' ../config/database.yml
+sed '35q;d' ../config/database.yml
 sed '81q;d' ../config/database.yml
 sed '82q;d' ../config/database.yml
 sed '83q;d' ../config/database.yml
@@ -153,11 +153,11 @@ echo ""
 echo "setting password in database.yml for database config"
 echo ""
 echo ""
-sed -i "28s/.*/  password: $password/g" ../config/database.yml
+sed -i "35s/.*/  password: $password/g" ../config/database.yml
 echo ""
 echo "password in database.yml set as"
 echo ""
-sed '28q;d' ../config/database.yml
+sed '35q;d' ../config/database.yml
 echo ""
 echo ""
 echo ""
