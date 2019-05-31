@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ../
-yum install letsencrypt net-tools
+yum install letsencrypt net-tools -y
 #certbot certonly
 echo "set FQDN , hostname @ prompt Common Name (e.g. server FQDN or YOUR name) []:skytune.online.io      < replace "
 
