@@ -10,6 +10,9 @@ vibesky, a SoundCloud clone, is a music social media app where users can discove
 
 <p align="center"><img src="https://i.imgur.com/wepal9D.jpg" width="800"></p>
 
+
+# * not for use in automobiles
+
 ## * WIP,
 
 
