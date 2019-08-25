@@ -18,7 +18,9 @@ vibesky, a SoundCloud clone, is a music social media app where users can discove
 
 # todo:
 
-* docker image soon
+* docker image via
+https://github.com/c4pt000/SKYTUNE-docker
+
 * mass uploader @profile
 * .flac support (site currently only seems to support .mp3 possibly others)
 * visual tic indicator for "loop once, loop indefinitely" in site audio player
