@@ -26,7 +26,7 @@ echo ""
 echo ""
 echo "installing postgresql-server"
 
-yum install ruby-devel openssl-devel.x86_64 postgresql-devel.x86_64 postgresql-server postgresql-contrib rubygem-thin httpd sudo systemd zlib-devel readline-devel redhat-rpm-config -y
+yum install ruby-devel openssl-devel.x86_64 libpq-devel postgresql-server-devel.x86_64 postgresql-server postgresql-contrib rubygem-thin httpd sudo systemd zlib-devel readline-devel redhat-rpm-config -y
 postgresql-setup --initdb --unit postgresql
 postgresql-setup upgrade
 systemctl enable postgresql
